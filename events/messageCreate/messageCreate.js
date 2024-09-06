@@ -9,8 +9,6 @@ function randomXp(min, max) {
 module.exports = async (message, client, handler) => {
     if(!message.inGuild() || message.author.bot) return
 
-        var random = randomXp(5,15)
-        db.add(`${message.author.id}_xp`, random)
-        message.channel.send(`${random}`)
+        db.add(`${message.author.id}_xp`, randomXp(5,15))
 
 };
