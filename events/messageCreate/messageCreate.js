@@ -7,8 +7,8 @@ function randomXp(min, max) {
   }
 
 module.exports = async (message, client, handler) => {
+    //LEVEL SISTEMI
     if(!message.inGuild() || message.author.bot) return
-
         db.add(`${message.author.id}_xp`, randomXp(5,15))
 
 };
