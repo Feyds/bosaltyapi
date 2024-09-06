@@ -11,9 +11,9 @@ db.setReadable(true)
 db.setLanguage('tr')
 const client = new Client({
     intents: [
-		    GatewayIntentBits.Guilds,
-		    GatewayIntentBits.GuildMessages,
-		    GatewayIntentBits.GuildMembers,
+	GatewayIntentBits.Guilds,
+	GatewayIntentBits.GuildMessages,
+	GatewayIntentBits.GuildMembers,
         GatewayIntentBits.AutoModerationConfiguration,
         GatewayIntentBits.AutoModerationExecution,
         GatewayIntentBits.DirectMessageReactions,
